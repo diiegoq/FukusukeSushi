@@ -1,5 +1,9 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const Home = () => {
-    return <h1>Home</h1>;
-  };
+  return <h1>Home</h1>;
+};
   
-  export default Home;
+export default Home;

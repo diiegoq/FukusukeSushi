@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #C31C1C;
+    color: white;
+    border: blue solid 5px;
+}
+
+.icono-sushi {
+    /* border: pink solid 5px; */
+    margin-left: 15px;
+}
+
+.otros-links{
+    /* border: pink solid 5px; */
+    margin-right: 15px;
+}
+
+.iconos-react{
+    color: white;
+    font-size: 2rem;
+    margin: 0px 5px;
+}
+
+@media (min-width: 768px) {
+    .iconos-react {
+        margin: 0px 20px;
+    }
+}
+
