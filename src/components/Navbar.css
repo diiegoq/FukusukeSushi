@@ -9,20 +9,45 @@
     margin-left: 15px;
 }
 
+.icono-sushi img {
+    border-radius: 50%; 
+    border: 3px solid black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+}
+  
+.icono-sushi img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+  
+
 .otros-links{
     /* border: pink solid 5px; */
     margin-right: 15px;
 }
 
-.iconos-react{
+.iconos-react {
     color: white;
     font-size: 2rem;
     margin: 0px 5px;
+    transition: all 0.3s ease; 
 }
+
+.iconos-react:hover {
+    color: black;
+    font-size: 2.5rem; 
+}
+
 
 @media (min-width: 768px) {
     .iconos-react {
         margin: 0px 20px;
+    }
+
+    .icono-sushi {
+        /* border: pink solid 5px; */
+        margin-left: 30px;
     }
 }
 
