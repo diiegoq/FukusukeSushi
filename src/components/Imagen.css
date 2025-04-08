@@ -6,10 +6,13 @@
     color: white;
     min-height: 50vh;
      
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    border: 5px;
+    border-radius: 3%;
+    overflow: hidden;
 }
 
 .imagen-content {
