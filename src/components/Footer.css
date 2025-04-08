@@ -1,0 +1,25 @@
+.footer {
+    background-color: #C31C1C;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+  
+.footer .footer-links {
+    margin-top: 10px;
+}
+  
+.iconos-contacto {
+    color: white;
+    font-size: 2rem;
+    margin: 0px 5px;
+    transition: all 0.3s ease; 
+}
+
+.iconos-contacto:hover {
+    color: black;
+ 
+}
