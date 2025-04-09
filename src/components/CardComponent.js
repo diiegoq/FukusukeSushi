@@ -22,9 +22,8 @@ const CardComponent = ({ imagen, titulo, descripcion, precio }) => {
                 <span>{cantidad}</span>
                 <button onClick={() => setCantidad(prev => prev + 1)}>+</button>
             </div>
-            </div>
+          </div>
         </Col>
-
       </Row>
     </Container>
   );

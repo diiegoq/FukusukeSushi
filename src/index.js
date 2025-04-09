@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import IniciarSesion from "./pages/IniciarSesion";
 import CarroDeCompra from "./pages/CarroDeCompra";
 import NoPage from "./pages/NoPage";
+import Tablas from "./pages/Tablas"
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="carrito" element={<CarroDeCompra />} />
           <Route path="iniciarsesion" element={<IniciarSesion />} />
+          <Route path="tablas" element={<Tablas />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

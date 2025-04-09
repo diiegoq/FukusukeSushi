@@ -1,5 +1,5 @@
 import CardComponent from '../components/CardComponent';
-import imagenTest from '../assets/horarios.jpg';
+import imagenTest from '../assets/tablas.jpg';
 import { Container } from 'react-bootstrap';
 
 const CarroDeCompra = () => {

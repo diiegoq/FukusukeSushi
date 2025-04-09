@@ -6,6 +6,11 @@ body {
 .home-container {
     min-height: 100vh;
     /* border: solid 5px blue;  */
+
+}
+
+.producto {
+    min-height: 30vh;
 }
 
 .titulos-container {
@@ -13,5 +18,3 @@ body {
     margin-top: 20px;
     font-family: 'Paytone One', sans-serif;
 }
-  
-  
