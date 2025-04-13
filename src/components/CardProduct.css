@@ -5,7 +5,7 @@
     padding: 24px;
     color: white;
     display: flex;
-    flex-wrap: wrap; /* Para que se acomode en móviles */
+    flex-wrap: wrap; 
     align-items: center;
     gap: 24px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
@@ -73,7 +73,7 @@
     background-color: #c82333;
   }
   
-  /* 📱 Mobile Styles */
+
   @media (max-width: 576px) {
     .card-product {
       flex-direction: column;

@@ -1,5 +1,7 @@
+// CARTA DE TABLAS
+
 import './CardProduct.css';
-import { BsFillCartPlusFill } from 'react-icons/bs'; // Cambié el icono a un carrito lleno
+import { BsFillCartPlusFill } from 'react-icons/bs'; 
 
 const CardProductComponent = ({ imagen, titulo, descripcion, precio }) => {
   return (
