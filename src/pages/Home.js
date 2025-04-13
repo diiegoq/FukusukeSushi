@@ -19,6 +19,7 @@ const Home = () => {
         alignItems="center" 
         margin="20px 0px 0px 0px"
         color="black"
+        animacion={false}
       />
 
       <Container className='titulos-container'><h1>PRODUCTOS</h1></Container>
