@@ -1,0 +1,72 @@
+[
+    {
+      "id_boleta": "B001",
+      "fecha_hora": "2025-04-12T08:30:00",
+      "monto_total": 13090,
+      "metodo_pago": "Tarjeta de crédito",
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_boleta": "B002",
+      "fecha_hora": "2025-04-12T09:15:00",
+      "monto_total": 17490,
+      "metodo_pago": "Efectivo",
+      "cliente": "Ana Gómez"
+    },
+    {
+      "id_boleta": "B003",
+      "fecha_hora": "2025-04-12T10:00:00",
+      "monto_total": 18800,
+      "metodo_pago": "Tarjeta de débito",
+      "cliente": "Carlos Sánchez"
+    },
+    {
+      "id_boleta": "B004",
+      "fecha_hora": "2025-04-12T10:45:00",
+      "monto_total": 21290,
+      "metodo_pago": "Tarjeta de crédito",
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id_boleta": "B005",
+      "fecha_hora": "2025-04-12T11:30:00",
+      "monto_total": 19690,
+      "metodo_pago": "Efectivo",
+      "cliente": "Luis Martínez"
+    },
+    {
+      "id_boleta": "B006",
+      "fecha_hora": "2025-04-12T12:00:00",
+      "monto_total": 28900,
+      "metodo_pago": "Tarjeta de débito",
+      "cliente": "Laura Fernández"
+    },
+    {
+      "id_boleta": "B007",
+      "fecha_hora": "2025-04-12T12:30:00",
+      "monto_total": 12300,
+      "metodo_pago": "Tarjeta de crédito",
+      "cliente": "Pedro Hernández"
+    },
+    {
+      "id_boleta": "B008",
+      "fecha_hora": "2025-04-12T13:00:00",
+      "monto_total": 27590,
+      "metodo_pago": "Efectivo",
+      "cliente": "Sofía González"
+    },
+    {
+      "id_boleta": "B009",
+      "fecha_hora": "2025-04-12T13:30:00",
+      "monto_total": 20990,
+      "metodo_pago": "Tarjeta de débito",
+      "cliente": "Ricardo Pérez"
+    },
+    {
+      "id_boleta": "B010",
+      "fecha_hora": "2025-04-12T14:00:00",
+      "monto_total": 17600,
+      "metodo_pago": "Efectivo",
+      "cliente": "David López"
+    }
+  ]

@@ -1,0 +1,105 @@
+/* Estilo base para la tabla */
+.table, .table th, .table td {
+    background-color: rgb(27, 27, 27) !important;
+    color: white !important;
+    border-color: #29282D;
+    border-radius: 2px;
+  }
+  
+  .table th {
+    background-color: #C31C1C !important;
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  .table td {
+    font-size: 1rem;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+    color: black !important;
+    cursor: pointer;
+  }
+  
+  /* Estilo base para el modal */
+  .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #29282D;
+    color: white;
+  }
+  
+  .modal-header {
+    background-color: #C31C1C;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .modal-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Elimino el footer del modal */
+  .modal-footer {
+    display: none;
+  }
+  
+  .home-container {
+    background-color: #29282D;
+    padding: 2rem;
+  }
+  
+  /* Título principal */
+  h1 {
+    color: white;
+    font-size: 2rem;
+    text-align: left; /* Alineado a la izquierda */
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  .table td, .table th {
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  /* Botones de filtros */
+  .filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-buttons .btn {
+    background-color: #C31C1C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 150px;
+  }
+  
+  .filter-buttons .btn:hover {
+    background-color: red;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Inputs de filtrado */
+  form .form-control {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  form .form-control::placeholder {
+    color: #ccc;
+  }
+  
