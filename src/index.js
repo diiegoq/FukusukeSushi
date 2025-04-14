@@ -12,6 +12,7 @@ import IniciarSesion from "./pages/IniciarSesion";
 import CarroDeCompra from "./pages/CarroDeCompra";
 import NoPage from "./pages/NoPage";
 import Tablas from "./pages/Tablas"
+import Registrarse from "./pages/Registrarse";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="carrito" element={<CarroDeCompra />} />
           <Route path="iniciarsesion" element={<IniciarSesion />} />
           <Route path="tablas" element={<Tablas />} />
+          <Route path="Registrarse" element={<Registrarse />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

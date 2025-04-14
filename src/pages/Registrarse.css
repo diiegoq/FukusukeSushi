@@ -1,0 +1,30 @@
+.registrarse-container{
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .registrarse-container {
+      max-width: 50%;
+    }
+}
+
+.boton-texto-div {
+    text-align: center;
+}
+
+.texto {
+    margin: 30px;
+    color: #5A595B;
+}
+
+.iniciar-sesion {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+  
+.iniciar-sesion:hover {
+    color: white; 
+    transform: scale(1.05); 
+}
+  

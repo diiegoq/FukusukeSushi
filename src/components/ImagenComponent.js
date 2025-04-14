@@ -1,10 +1,12 @@
 import React from 'react';
 import './Imagen.css';
 
-const Imagen = ({ backgroundImage, title, description, alignItems, margin }) => {
+const Imagen = ({ backgroundImage, title, description, alignItems, margin, animacion = true }) => {
+  const nombreContainer = `imagen-container${animacion ? ' imagen-animated' : ''}`;
+  
   return (
     <div
-      className="imagen-container"
+      className={nombreContainer}
       style={{ backgroundImage: `url(${backgroundImage})`, margin: margin }}
     >
       <div className="imagen-content" style={{ alignItems: alignItems }}>
