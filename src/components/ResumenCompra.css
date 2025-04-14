@@ -1,0 +1,49 @@
+/* ResumenCompraComponent.scss */
+
+.resumen-compra {
+    border-radius: 1rem;
+    background-color: rgb(27,27,27);
+    transition: box-shadow 0.2s ease-in-out;
+    color: white;
+    
+    h5 {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  
+    .resumen-linea {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+  
+    .resumen-linea strong {
+      color: #212529;
+    }
+  
+    hr {
+      margin: 1rem 0;
+      border-top: 1px solid #dee2e6;
+    }
+  
+    .resumen-total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+  
+    .btn {
+      font-weight: 500;
+      padding: 0.6rem;
+      background-color: #C31C1C;
+      border: none;
+      &:hover {
+        background-color: red;
+      }
+    }
+
+  }
+  

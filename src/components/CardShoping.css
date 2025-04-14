@@ -1,0 +1,26 @@
+/* CardShoping.css */
+
+/* Contenedor principal del item del carrito */
+.card-shop-item {
+    background-color: rgba(27, 27, 27) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    padding: 1rem !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    color: white;
+  }
+  
+  /* Sección de cantidad */
+  .card-shop-item .d-inline-flex {
+    background-color: #C31C1C !important;
+    border-radius: 5px !important;
+    border: none !important;
+    color: white;
+  }
+  
+  /* Sobrescribir color verde del precio */
+  .card-shop-item .text-success {
+    color: white !important; /* Cambia el color a negro o el que prefieras */
+  }
+  

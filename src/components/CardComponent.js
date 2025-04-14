@@ -1,33 +1,44 @@
-// CARTA DEL CARRITO
+import React from 'react';
+import './CardShoping.css';
 
-import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import './Card.css';
-
-const CardComponent = ({ imagen, titulo, descripcion, precio }) => {
-  const [cantidad, setCantidad] = useState(0);
-
+const CardComponent = ({ imagen, titulo, precio, cantidad, aumentar, disminuir, eliminar }) => {
   return (
-    <Container className="card-container mx-auto">
-      <Row>
-        <Col md={4} className="card-imagen">
-          <img src={imagen} alt={titulo} />
-        </Col>
+    <div className="card-shop-item mb-3">
+      <div className="row align-items-center g-3">
 
-        <Col md={8} className="card-detalles">
-          <h2>{titulo}</h2>
-          <p>{descripcion}</p>
-          <div className="card-footer">
-            <span>${precio}</span>
-            <div className="cantidad-caja">
-                <button onClick={() => setCantidad(prev => Math.max(prev - 1, 0))}>-</button>
-                <span>{cantidad}</span>
-                <button onClick={() => setCantidad(prev => prev + 1)}>+</button>
-            </div>
+        {/* Imagen */}
+        <div className="col-4 col-sm-2 text-center">
+          <img
+            src={imagen}
+            alt={titulo}
+            className="img-fluid rounded"
+            style={{ maxHeight: '100px', objectFit: 'contain' }}
+          />
+        </div>
+
+        {/* Título */}
+        <div className="col-8 col-sm-4">
+          <h6 className="fw-semibold mb-1">{titulo}</h6>
+        </div>
+
+        {/* Cantidad */}
+        <div className="col-6 col-sm-3 text-center text-sm-start">
+          <div className="d-inline-flex align-items-center px-2 py-1">
+            <button className="btn btn-sm px-2 text-white" onClick={disminuir}>−</button>
+            <span className="mx-2">{cantidad}</span>
+            <button className="btn btn-sm px-2 text-white" onClick={aumentar}>+</button>
           </div>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+
+        {/* Precio */}
+        <div className="col-6 col-sm-3 text-end">
+          <div className="fw-bold fs-5 text-success">
+            ${precio.toLocaleString("es-CL")}
+          </div>
+        </div>
+
+      </div>
+    </div>
   );
 };
 
