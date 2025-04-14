@@ -11,8 +11,10 @@ import Home from "./pages/Home";
 import IniciarSesion from "./pages/IniciarSesion";
 import CarroDeCompra from "./pages/CarroDeCompra";
 import NoPage from "./pages/NoPage";
-import Tablas from "./pages/Tablas"
+import Tablas from "./pages/TablasPage"
 import Registrarse from "./pages/Registrarse";
+import Rolls from "./pages/RollsPage"
+import Cocteleria from "./pages/CocktailsPage"
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="carrito" element={<CarroDeCompra />} />
           <Route path="iniciarsesion" element={<IniciarSesion />} />
           <Route path="tablas" element={<Tablas />} />
+          <Route path="rolls" element={<Rolls />} />
+          <Route path="cocteleria" element={<Cocteleria />} />
           <Route path="Registrarse" element={<Registrarse />} />
           <Route path="*" element={<NoPage />} />
         </Route>

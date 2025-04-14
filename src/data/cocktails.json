@@ -1,0 +1,52 @@
+[
+  {
+    "titulo": "Pisco Sour",
+    "descripcion": "El clásico cóctel chileno, preparado con pisco, jugo de limón, azúcar, clara de huevo y amargo de angostura.",
+    "precio": "4.500"
+  },
+  {
+    "titulo": "Margarita",
+    "descripcion": "Cóctel refrescante con tequila, jugo de lima, triple sec y un toque de sal en el borde del vaso.",
+    "precio": "5.000"
+  },
+  {
+    "titulo": "Mojito",
+    "descripcion": "Ron blanco, menta fresca, azúcar, limón y agua con gas, servido sobre hielo picado. Ideal para días cálidos.",
+    "precio": "4.800"
+  },
+  {
+    "titulo": "Daiquiri",
+    "descripcion": "Cóctel sencillo y elegante con ron blanco, jugo de limón y azúcar, servido frío.",
+    "precio": "5.200"
+  },
+  {
+    "titulo": "Caipirinha",
+    "descripcion": "Cóctel brasileño con cachaça, azúcar y lima. Dulce, refrescante y con el toque ácido de la lima.",
+    "precio": "5.500"
+  },
+  {
+    "titulo": "Negroni",
+    "descripcion": "Una mezcla amarga de ginebra, vermut rojo y Campari, servido con una rodaja de naranja.",
+    "precio": "6.000"
+  },
+  {
+    "titulo": "Cosmopolitan",
+    "descripcion": "Cóctel elegante con vodka, triple sec, jugo de arándano y un toque de lima.",
+    "precio": "5.800"
+  },
+  {
+    "titulo": "Bloody Mary",
+    "descripcion": "Cóctel a base de vodka, jugo de tomate, salsa inglesa, limón, y especias, ideal para comenzar el día o como aperitivo.",
+    "precio": "5.200"
+  },
+  {
+    "titulo": "Gin Tonic",
+    "descripcion": "Cóctel simple y refrescante con ginebra y agua tónica, acompañado de rodajas de pepino o limón.",
+    "precio": "4.500"
+  },
+  {
+    "titulo": "Piña Colada",
+    "descripcion": "Ron blanco, crema de coco y jugo de piña, batido hasta obtener una mezcla suave y cremosa.",
+    "precio": "5.500"
+  }
+]

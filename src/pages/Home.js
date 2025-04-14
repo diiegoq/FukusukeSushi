@@ -36,22 +36,26 @@ const Home = () => {
       </Link>
 
       
-      <Imagen className="producto"
-        backgroundImage={imgRolls}
-        title="Rolls" 
-        description=""
-        alignItems="flex-end" 
-        margin="20px 20px 20px 20px" 
-        min-height = "10vh"
-      />
-
-      <Imagen className="producto"
-        backgroundImage={imgCocktail}
-        title="Coctelería" 
-        description=""
-        alignItems="flex-end"  
-        margin="20px 20px 20px 20px" 
-      />
+      <Link to="/rolls" style={{ textDecoration: 'none' }}>
+        <Imagen className="producto"
+          backgroundImage={imgRolls}
+          title="Rolls" 
+          description=""
+          alignItems="flex-end" 
+          margin="20px 20px 20px 20px" 
+          min-height = "10vh"
+        />
+      </Link>
+    
+      <Link to="/cocteleria" style={{ textDecoration: 'none' }}>
+        <Imagen className="producto"
+          backgroundImage={imgCocktail}
+          title="Coctelería" 
+          description=""
+          alignItems="flex-end"  
+          margin="20px 20px 20px 20px" 
+        />
+    </Link>
     </div>
 
   );
