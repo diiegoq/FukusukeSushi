@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Home.css';
 import Imagen from './../components/ImagenComponent'
+
 import horariosImage from '../assets/horario.jpg'
 import imgTabla from '../assets/tablas.jpg'
 import imgRolls from '../assets/rolls.jpg'

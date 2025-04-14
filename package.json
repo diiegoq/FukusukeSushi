@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "'": "file:awesome.me/kit-32fd5028bd@latest'",
+    "boostrap": "^2.0.0",
     "bootstrap": "^5.3.5",
+    "bootstrap5": "^1.1.9",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.1.0",
