@@ -1,0 +1,31 @@
+/* Estilo para el fondo del modal (backdrop) */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo sin ponerlo completamente negro */
+  }
+  
+  /* Estilo base para el contenido del modal */
+  .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #29282D; /* Fondo oscuro para el contenido del modal */
+    color: white;
+  }
+  
+  /* Estilo para la cabecera del modal */
+  .modal-header {
+    background-color: #C31C1C; /* Rojo oscuro */
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Estilo del título del modal */
+  .modal-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Elimino el footer del modal */
+  .modal-footer {
+    display: none;
+  }
+  

@@ -22,7 +22,7 @@ const CarroDeCompra = () => {
 
   const disminuirCantidad = (idx) => {
     const nuevosProductos = [...carrito];
-    if (nuevosProductos[idx].cantidad > 1) {
+    if (nuevosProductos[idx].cantidad > 0) {
       nuevosProductos[idx].cantidad -= 1;
       setCarrito(nuevosProductos);
     }
@@ -33,11 +33,9 @@ const CarroDeCompra = () => {
     setCarrito(nuevosProductos);
   };
 
-  // Cálculo del total
-  const total = carrito.reduce(
-    (acc, prod) => acc + prod.precio * prod.cantidad,
-    0
-  );
+  // Calcular total y cantidad total de productos
+  const total = carrito.reduce((acc, prod) => acc + prod.precio *1000* prod.cantidad, 0);
+  const cantidadTotal = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
 
   return (
     <Container className="home-container mt-4">
@@ -60,8 +58,13 @@ const CarroDeCompra = () => {
           ))}
         </Col>
 
-        {/* Resumen de compra con props */}
-        <ResumenCompra carrito={carrito} total={25000} envio="Gratis" />
+        {/* Resumen de compra actualizado */}
+        <ResumenCompra
+          carrito={carrito}
+          total={total}
+          cantidadTotal={cantidadTotal}
+          envio="Gratis"
+        />
       </Row>
     </Container>
   );

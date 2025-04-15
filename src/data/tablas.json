@@ -1,8 +1,10 @@
 [
   {
+    "id": 1,
     "titulo": "Tabla Kids 16 piezas",
     "descripcion": "Mini rolls de pollo, queso crema y palta. Sin wasabi ni picante. Ideal para niños.",
-    "precio": "6.500"
+    "precio": "6.500",
+    "imagen": "tablas.jpg"
   },
   {
     "titulo": "Tabla Clásica 20 piezas",
