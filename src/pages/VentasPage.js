@@ -109,7 +109,7 @@ const Ventas = () => {
       </Table>
 
       {/* Modal de detalles */}
-      <Modal show={showModal} onHide={handleCloseModal}>
+      <Modal show={showModal} onHide={handleCloseModal} className="sin-footer">
         <Modal.Header closeButton>
           <Modal.Title>Detalles de la Boleta</Modal.Title>
         </Modal.Header>
