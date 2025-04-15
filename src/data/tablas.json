@@ -5,36 +5,43 @@
     "precio": "6.500"
   },
   {
+    "id": 2,
     "titulo": "Tabla Clásica 20 piezas",
     "descripcion": "10 hosomakis de salmón, 6 california rolls y 4 nigiris de camarón.",
     "precio": "8.990"
   },
   {
+    "id": 3,
     "titulo": "Tabla Acevichada 20 piezas",
     "descripcion": "Rolls con topping de ceviche peruano, aliño cítrico, y toque de ají amarillo.",
     "precio": "10.500"
   },
   {
+    "id": 4,
     "titulo": "Tabla Veggie 24 piezas",
     "descripcion": "Rolls rellenos de palta, pepino, zanahoria y tofu. Acompañados con salsa de soya light.",
     "precio": "7.990"
   },
   {
+    "id": 5,
     "titulo": "Tabla Nikkei 24 piezas",
     "descripcion": "Fusión japonesa-peruana con ingredientes como pulpo, ceviche y salsa acevichada.",
     "precio": "12.500"
   },
   {
+    "id": 6,
     "titulo": "Tabla Crispy 28 piezas",
     "descripcion": "Roll apanado relleno de queso crema, salmón, palta y topping de cebolla crispy.",
     "precio": "11.990"
   },
   {
+    "id": 7,
     "titulo": "Tabla Premium 30 piezas",
     "descripcion": "Incluye rolls tempura, sake roll (salmón), unagi (anguila) y 4 nigiris surtidos.",
     "precio": "13.990"
   },
   {
+    "id": 8,
     "titulo": "Tabla Familiar 40 piezas",
     "descripcion": "Surtido de california, pollo teriyaki, camarón furai, y veggie rolls. Ideal para compartir.",
     "precio": "16.990"

@@ -42,7 +42,7 @@
   }
   
   /* Elimino el footer del modal */
-  .modal-footer {
+  .modal.sin-footer .modal-footer {
     display: none;
   }
   

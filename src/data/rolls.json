@@ -1,40 +1,48 @@
 [
     {
+      "id": 1,
       "titulo": "Roll Salmón Palta",
       "descripcion": "Roll de salmón fresco, palta y queso crema, envuelto en alga nori. Un clásico que combina frescura y suavidad.",
       "precio": "5.500"
     },
     {
+      "id": 2,
       "titulo": "Roll California",
       "descripcion": "Roll con camarón, palta y pepino, envuelto en arroz, cubierto con ajonjolí tostado. Un sabor delicado y balanceado.",
       "precio": "6.000"
     },
     {
+      "id": 3,
       "titulo": "Roll Spicy",
       "descripcion": "Atún picante con cebollín y sriracha, envuelto en arroz y alga nori. Perfecto para quienes buscan algo más audaz.",
       "precio": "7.000"
     },
     {
+      "id": 4,
       "titulo": "Roll Tempura",
       "descripcion": "Roll crujiente de tempura con camarón y queso crema, acompañado de salsa teriyaki. Una explosión de textura y sabor.",
       "precio": "7.500"
     },
     {
+      "id": 5,
       "titulo": "Roll Philly",
       "descripcion": "Salmón fresco y queso crema, envuelto en alga nori y arroz, con un toque de cebollín y sésamo. Suavidad y cremosidad en cada bocado.",
       "precio": "6.500"
     },
     {
+      "id": 6,
       "titulo": "Roll Ebi Furai",
       "descripcion": "Camarón tempura, con palta y mayonesa de ajo, envuelto en arroz con alga nori. Una mezcla crujiente y suave.",
       "precio": "7.200"
     },
     {
+      "id": 7,
       "titulo": "Roll Veggie Delight",
       "descripcion": "Relleno de palta, pepino, zanahoria y tofu, acompañado de salsa de soya light. Un roll fresco y saludable para los veganos.",
       "precio": "5.000"
     },
     {
+      "id": 8,
       "titulo": "Roll Unagi",
       "descripcion": "Anguila ahumada, envuelta en arroz y alga nori, con salsa teriyaki y un toque de sésamo. Un sabor profundo y sofisticado.",
       "precio": "8.000"
