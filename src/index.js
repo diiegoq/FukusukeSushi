@@ -16,7 +16,6 @@ import Rolls from "./pages/RollsPage";
 import Cocteleria from "./pages/CocktailsPage";
 import HomeAdmin from "./pages/HomeAdmin";
 import Ventas from "./pages/VentasPage";
-import ProductoDetalle from './pages/ProductoDetalle';  // Importar la página de detalle del producto
 
 export default function App() {
   return (
@@ -32,7 +31,6 @@ export default function App() {
           <Route path="registrarse" element={<Registrarse />} />
           <Route path="home-admin" element={<HomeAdmin />} />
           <Route path="ventas" element={<Ventas />} />
-          <Route path="producto/:id" element={<ProductoDetalle />} /> {/* Ruta para los detalles del producto */}
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

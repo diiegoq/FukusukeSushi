@@ -1,0 +1,47 @@
+/* Imagen más pequeña y centrada */
+.producto-modal-img {
+    height: 200px !important; /* Reducimos el tamaño de la imagen */
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px !important; /* Redondeamos las esquinas de la imagen */
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el botón "Agregar" rojo */
+  .producto-modal-button {
+    background-color: #C31C1C !important; /* Rojo de la paleta */
+    border: 1px solid #C31C1C !important; /* Rojo de la paleta */
+    color: white !important;
+    padding: 0.4rem 0.8rem !important;
+    border-radius: 6px !important; /* Bordes redondeados para el botón */
+    font-weight: 600 !important;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  }
+  
+  .producto-modal-button:hover {
+    background-color: red !important;  /* Azul para hover */
+    border: none;
+    color: white !important;  /* Mantener texto blanco al hacer hover */
+  }
+  
+  /* Estilo para checkboxes transparentes */
+  .form-check-input {
+    background-color: transparent !important;
+    border-color: #C31C1C !important; /* Rojo de la paleta */
+  }
+  
+  /* Cuando el checkbox está seleccionado */
+  .form-check-input:checked {
+    background-color: #C31C1C !important; /* Rojo de la paleta cuando está seleccionado */
+    border-color: #C31C1C !important;
+  }
+  
+  /* Cuando el checkbox está en foco */
+  .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(195, 28, 28, 0.5) !important; /* Rojo de la paleta con transparencia */
+  }
+  
+  .form-check-label {
+    color: white !important; /* Asegurando que el texto también sea blanco */
+  }
+  
