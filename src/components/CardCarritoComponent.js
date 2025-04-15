@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardShoping.css';
+import './CardCarrito.css';
 
 const CardComponent = ({ imagen, titulo, precio, cantidad, aumentar, disminuir, eliminar }) => {
   return (

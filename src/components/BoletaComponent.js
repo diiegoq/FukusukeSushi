@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import './ResumenCompra.css'
+import './Boleta.css'
 
 const BoletaComponent = ({ id, fecha_hora, monto_total, metodo_pago, cliente }) => {
     return (

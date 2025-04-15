@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CardComponent from '../components/CardComponent';
+import CardCarritoComponent from '../components/CardCarritoComponent';
 import imagenTest from '../assets/tablas.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 import data from '../data/tablas.json';
@@ -45,7 +45,7 @@ const CarroDeCompra = () => {
         <Col xs={12} lg={8}>
           {carrito.map((producto, idx) => (
             <div key={idx} className="mb-4">
-              <CardComponent
+              <CardCarritoComponent
                 imagen={producto.imagen}
                 titulo={producto.titulo}
                 precio={producto.precio}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import ModalProducto from './ProductoModal';
-import './CardProductStyle.css';
+import './CardProduct.css';
 
 const CardProductComponent = ({ imagen, titulo, descripcion, precio }) => {
   const [showModal, setShowModal] = useState(false);
