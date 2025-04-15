@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import logo from '../assets/Logo.png';
-import './Navbar.css';
+import './NavbarComponent.css';
 import { CiShoppingCart, CiUser } from "react-icons/ci";
 
 

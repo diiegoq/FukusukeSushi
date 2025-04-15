@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './Registrarse.css'
+import './RegisterPage.css'
 
 function Registrarse() {
   const [validated, setValidated] = useState(false);

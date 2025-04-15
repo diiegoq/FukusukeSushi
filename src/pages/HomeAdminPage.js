@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import './Home.css';
-import Imagen from './../components/ImagenComponent'
+import './HomePage.css';
+import Imagen from '../components/ImagenComponent'
 import imgTabla from '../assets/tablas.jpg'
 import imgCocktail from '../assets/cocktail.jpg'
 

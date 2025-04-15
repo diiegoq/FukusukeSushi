@@ -1,5 +1,5 @@
 import React from 'react';
-import './Imagen.css';
+import './ImagenComponent.css';
 
 const Imagen = ({ backgroundImage, title, description, alignItems, margin, animacion = true }) => {
   const nombreContainer = `imagen-container${animacion ? ' imagen-animated' : ''}`;

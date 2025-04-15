@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Footer.css';
+import './FooterComponent.css';
 
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram, FaTiktok } from "react-icons/fa";

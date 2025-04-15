@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 
-import './Home.css';
-import Imagen from './../components/ImagenComponent'
+import './HomePage.css';
+import Imagen from '../components/ImagenComponent'
 
 import horariosImage from '../assets/horario.jpg'
 import imgTabla from '../assets/tablas.jpg'

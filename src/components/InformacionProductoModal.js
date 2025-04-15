@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import { Modal, Button, Form } from 'react-bootstrap';
-import './ProductoModal.css';
+import './InformacionProductoModal.css';
 
 const ProductoModal = ({ show, onClose, imagen, titulo, descripcion, precio }) => {
   const [salsa1, setSalsa1] = useState('');

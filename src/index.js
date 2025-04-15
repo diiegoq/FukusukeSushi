@@ -6,17 +6,17 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import IniciarSesion from "./pages/IniciarSesion";
-import CarroDeCompra from "./pages/CarroDeCompra";
+import Home from "./pages/HomePage";
+import IniciarSesion from "./pages/LogInPage";
+import CarroDeCompra from "./pages/ShoppingCartPage";
 import NoPage from "./pages/NoPage";
 import Tablas from "./pages/TablasPage";
-import Registrarse from "./pages/Registrarse";
+import Registrarse from "./pages/RegisterPage";
 import Rolls from "./pages/RollsPage";
 import Cocteleria from "./pages/CocktailsPage";
-import HomeAdmin from "./pages/HomeAdmin";
+import HomeAdmin from "./pages/HomeAdminPage";
 import Ventas from "./pages/VentasPage";
-import ProductosAdmin from "./pages/ProductosAdmin";
+import ProductosAdmin from "./pages/AdminProductsPage";
 
 export default function App() {
   return (
