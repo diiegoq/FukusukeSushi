@@ -28,3 +28,21 @@
     transform: scale(1.05); 
 }
   
+.custom-select {
+    background-color: #1E1E1E; 
+    color: white;
+    border: 1px solid #444444;
+}
+
+.custom-select:focus {
+    background-color: #1E1E1E;
+    color: white;
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25);
+}
+
+.custom-select option:checked {
+    background-color: #1E1E1E; 
+    color: white;
+}
