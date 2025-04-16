@@ -2,6 +2,7 @@
 body {
     margin: 0;
     /* font-family: "Papyrus", fantasy;  */ /* <----- CAMBIAR FONT DE LA PÁGINA*/
+    font-family: "Libre Franklin", sans-serif;
     min-height: 200vh;
     display: flex;
     flex-direction: column;

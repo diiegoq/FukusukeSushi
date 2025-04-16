@@ -41,7 +41,7 @@ function Registrarse() {
 
       <Form.Group className="mb-3">
         <Form.Label>Sexo</Form.Label>
-        <Form.Select required aria-label="Default select example">
+        <Form.Select required aria-label="Default select example" className="custom-select">
           <option value="">Seleccionar</option>
           <option value="hombre">Hombre</option>
           <option value="mujer">Mujer</option>
@@ -61,7 +61,7 @@ function Registrarse() {
       <Row>
       <Form.Group as={Col} className="mb-3">
         <Form.Label>Región</Form.Label>
-        <Form.Select required aria-label="Default select example">
+        <Form.Select required aria-label="Default select example" className="custom-select">
           <option value="">Seleccionar</option>
           <option value="valparaiso">Región de Valparaíso</option>
           <option value="santiago">Región Metropolitana</option>
@@ -71,7 +71,7 @@ function Registrarse() {
 
       <Form.Group as={Col} className="mb-3">
         <Form.Label>Comuna</Form.Label>
-        <Form.Select required aria-label="Default select example">
+        <Form.Select required aria-label="Default select example" className="custom-select">
           <option value="">Seleccionar</option>
           <option value="valparaiso">Valparaíso</option>
           <option value="quilpue">Quilpué</option>
@@ -81,7 +81,7 @@ function Registrarse() {
 
       <Form.Group as={Col} className="mb-3">
         <Form.Label>Provincia</Form.Label>
-        <Form.Select required aria-label="Default select example">
+        <Form.Select required aria-label="Default select example" className="custom-select">
           <option value="">Seleccionar</option>
           <option value="valparaiso">Valparaíso</option>
           <option value="quilpue">Quilpué</option>

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import { Modal, Button, Form } from 'react-bootstrap';
+import { TiDeleteOutline } from 'react-icons/ti';
+
 import './InformacionProductoModal.css';
 
 const ProductoModal = ({ show, onClose, imagen, titulo, descripcion, precio }) => {
@@ -30,6 +32,8 @@ const ProductoModal = ({ show, onClose, imagen, titulo, descripcion, precio }) =
 
   return (
     <Modal show={show} onHide={onClose} centered size="lg" contentClassName="producto-modal-content">
+      <Modal.Header closeButton>
+      </Modal.Header>
       <Modal.Body className="producto-modal-body">
         <div className="producto-modal-card">
           <img

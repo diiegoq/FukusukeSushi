@@ -21,7 +21,7 @@ const AdminProductos = () => {
     titulo: '',
     descripcion: '',
     precio: '',
-    imagen: imgTabla, // Imagen predeterminada para todos los productos
+    imagen: imgTabla,
   });
 
   const [tipoModal, setTipoModal] = useState('producto');
@@ -31,7 +31,7 @@ const AdminProductos = () => {
   const handleShowAgregar = (tipo) => {
     setModoEdicion(false);
     setTipoModal(tipo);
-    setProductoActual({ id: null, titulo: '', descripcion: '', precio: '', imagen: imgTabla }); // Imagen predeterminada
+    setProductoActual({ id: null, titulo: '', descripcion: '', precio: '', imagen: imgTabla });
     setShowModal(true);
   };
 
@@ -61,7 +61,7 @@ const AdminProductos = () => {
         setRolls(rolls.map(r => (r.id === productoActual.id ? productoActual : r)));
       }
     } else {
-      const nuevo = { ...productoActual, id: Date.now() }; // Usar imagen predeterminada al crear
+      const nuevo = { ...productoActual, id: Date.now() };
       if (tipoModal === 'producto') {
         setProductos([...productos, nuevo]);
       } else {
@@ -84,7 +84,7 @@ const AdminProductos = () => {
     const itemsFiltrados = filtrar(items, busqueda);
 
     return (
-      <div>
+      <div className="admin-producto">
         <Row className="align-items-center mt-5 mb-3">
           <Col xs={12} md={6}>
             <h3 className="text-white">Administración de {tipo === 'producto' ? 'Tablas' : 'Rolls'}</h3>
@@ -112,27 +112,15 @@ const AdminProductos = () => {
                   src={item.imagen || (tipo === 'producto' ? imgTabla : imgRoll)} 
                   alt={item.titulo} 
                   className="card-img-top" 
-                  style={{ objectFit: 'cover', height: '200px' }} // Controlamos la altura y el ajuste de las imágenes
+                  style={{ objectFit: 'cover', height: '200px' }}
                 />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{item.titulo}</h5>
                   <p className="card-text">{item.descripcion}</p>
                   <p className="card-text fw-bold">${item.precio}</p>
                   <div className="d-flex gap-2 mt-auto">
-                    <Button 
-                      size="sm" 
-                      className="btn-editar" 
-                      onClick={() => handleShowEditar(tipo, item)}
-                    >
-                      Editar
-                    </Button>
-                    <Button 
-                      size="sm" 
-                      className="btn-eliminar" 
-                      onClick={() => handleEliminar(tipo, item.id)}
-                    >
-                      Eliminar
-                    </Button>
+                    <Button size="sm" className="btn-editar" onClick={() => handleShowEditar(tipo, item)}>Editar</Button>
+                    <Button size="sm" className="btn-eliminar" onClick={() => handleEliminar(tipo, item.id)}>Eliminar</Button>
                   </div>
                 </div>
               </div>
@@ -158,7 +146,7 @@ const AdminProductos = () => {
         </Modal.Header>
         <Modal.Body>
           <Form>
-            <Form.Group className="mb-3">
+            <Form.Group controlId="formTitulo">
               <Form.Label>Título</Form.Label>
               <Form.Control
                 type="text"
@@ -166,16 +154,17 @@ const AdminProductos = () => {
                 onChange={(e) => setProductoActual({ ...productoActual, titulo: e.target.value })}
               />
             </Form.Group>
-            <Form.Group className="mb-3">
+
+            <Form.Group controlId="formDescripcion">
               <Form.Label>Descripción</Form.Label>
               <Form.Control
-                as="textarea"
-                rows={3}
+                type="text"
                 value={productoActual.descripcion}
                 onChange={(e) => setProductoActual({ ...productoActual, descripcion: e.target.value })}
               />
             </Form.Group>
-            <Form.Group className="mb-3">
+
+            <Form.Group controlId="formPrecio">
               <Form.Label>Precio</Form.Label>
               <Form.Control
                 type="number"
@@ -186,9 +175,11 @@ const AdminProductos = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>Cancelar</Button>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Cerrar
+          </Button>
           <Button variant="primary" onClick={handleGuardar}>
-            {modoEdicion ? 'Guardar Cambios' : 'Agregar'}
+            {modoEdicion ? 'Guardar cambios' : 'Agregar'}
           </Button>
         </Modal.Footer>
       </Modal>
