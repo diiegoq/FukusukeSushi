@@ -5,6 +5,7 @@ import Imagen from '../components/ImagenComponent'
 import imgVentas from '../assets/ventas.png'
 import imgUsuarios from '../assets/usuarios.jpg'
 import imgProductos from '../assets/productos.jpg'
+import imgDespacho from '../assets/despacho.jpg'
 
 const HomeAdmin = () => {
   return (
@@ -39,6 +40,16 @@ const HomeAdmin = () => {
             margin="20px 20px 20px 20px" 
             />
         </Link>
+
+        <Link to="/despacho" style={{ textDecoration: 'none' }}>
+        <Imagen class="producto"
+          backgroundImage={imgDespacho}
+          title="PRODUCTOS" 
+          description=""
+          alignItems="flex-end"  
+          margin="20px 20px 20px 20px"
+        />
+      </Link>
     </div>
 
   );
