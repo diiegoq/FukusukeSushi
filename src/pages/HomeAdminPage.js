@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './HomePage.css';
 import Imagen from '../components/ImagenComponent'
 import imgVentas from '../assets/ventas.png'
-import imgCocktail from '../assets/cocktail.jpg'
+import imgUsuarios from '../assets/usuarios.jpg'
+import imgProductos from '../assets/productos.jpg'
 
 const HomeAdmin = () => {
   return (
@@ -11,7 +12,7 @@ const HomeAdmin = () => {
 
       <Link to="/productos-admin" style={{ textDecoration: 'none' }}>
         <Imagen class="producto"
-          backgroundImage={imgCocktail}
+          backgroundImage={imgProductos}
           title="PRODUCTOS" 
           description=""
           alignItems="flex-end"  
@@ -31,7 +32,7 @@ const HomeAdmin = () => {
 
         <Link to="/cocteleria" style={{ textDecoration: 'none' }}>
             <Imagen className="producto"
-            backgroundImage={imgCocktail}
+            backgroundImage={imgUsuarios}
             title="USUARIOS" 
             description=""
             alignItems="flex-end"  
