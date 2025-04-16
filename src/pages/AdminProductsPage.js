@@ -1,31 +1,37 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import Table from 'react-bootstrap/Table';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import productosData from '../data/tablas.json';
 import rollsData from '../data/rolls.json';
+import imgTabla from '../assets/tablas.jpg';
+import imgRoll from '../assets/rolls.jpg';
+import './AdminProducts.css';
 
 const AdminProductos = () => {
   const [productos, setProductos] = useState(productosData);
   const [rolls, setRolls] = useState(rollsData);
-
   const [showModal, setShowModal] = useState(false);
   const [modoEdicion, setModoEdicion] = useState(false);
   const [productoActual, setProductoActual] = useState({
     id: null,
     titulo: '',
     descripcion: '',
-    precio: ''
+    precio: '',
+    imagen: imgTabla, // Imagen predeterminada para todos los productos
   });
 
-  const [tipoModal, setTipoModal] = useState('producto'); // 'producto' o 'roll'
+  const [tipoModal, setTipoModal] = useState('producto');
+  const [busquedaProductos, setBusquedaProductos] = useState('');
+  const [busquedaRolls, setBusquedaRolls] = useState('');
 
   const handleShowAgregar = (tipo) => {
     setModoEdicion(false);
     setTipoModal(tipo);
-    setProductoActual({ id: null, titulo: '', descripcion: '', precio: '' });
+    setProductoActual({ id: null, titulo: '', descripcion: '', precio: '', imagen: imgTabla }); // Imagen predeterminada
     setShowModal(true);
   };
 
@@ -55,7 +61,7 @@ const AdminProductos = () => {
         setRolls(rolls.map(r => (r.id === productoActual.id ? productoActual : r)));
       }
     } else {
-      const nuevo = { ...productoActual, id: Date.now() };
+      const nuevo = { ...productoActual, id: Date.now() }; // Usar imagen predeterminada al crear
       if (tipoModal === 'producto') {
         setProductos([...productos, nuevo]);
       } else {
@@ -65,47 +71,82 @@ const AdminProductos = () => {
     setShowModal(false);
   };
 
-  const renderTabla = (items, tipo) => (
-    <>
-      <h3 className="mt-5">Administración de {tipo === 'producto' ? 'Productos' : 'Rolls'}</h3>
-      <Button className="mb-3" variant="success" onClick={() => handleShowAgregar(tipo)}>
-        + Agregar {tipo === 'producto' ? 'Producto' : 'Roll'}
-      </Button>
+  const filtrar = (items, texto) => {
+    return items.filter((item) =>
+      item.titulo.toLowerCase().includes(texto.toLowerCase()) ||
+      item.descripcion.toLowerCase().includes(texto.toLowerCase())
+    );
+  };
 
-      <Table striped bordered hover responsive>
-        <thead>
-          <tr>
-            <th>Título</th>
-            <th>Descripción</th>
-            <th>Precio</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map(item => (
-            <tr key={item.id}>
-              <td>{item.titulo}</td>
-              <td>{item.descripcion}</td>
-              <td>${item.precio}</td>
-              <td>
-                <Button size="sm" variant="primary" className="me-2" onClick={() => handleShowEditar(tipo, item)}>
-                  Editar
-                </Button>
-                <Button size="sm" variant="danger" onClick={() => handleEliminar(tipo, item.id)}>
-                  Eliminar
-                </Button>
-              </td>
-            </tr>
+  const renderCards = (items, tipo) => {
+    const busqueda = tipo === 'producto' ? busquedaProductos : busquedaRolls;
+    const setBusqueda = tipo === 'producto' ? setBusquedaProductos : setBusquedaRolls;
+    const itemsFiltrados = filtrar(items, busqueda);
+
+    return (
+      <div>
+        <Row className="align-items-center mt-5 mb-3">
+          <Col xs={12} md={6}>
+            <h3 className="text-white">Administración de {tipo === 'producto' ? 'Tablas' : 'Rolls'}</h3>
+          </Col>
+          <Col xs={12} md={6} className="text-md-end mt-2 mt-md-0">
+            <Button className="btn-agregar" onClick={() => handleShowAgregar(tipo)}>
+              + Agregar {tipo === 'producto' ? 'Producto' : 'Roll'}
+            </Button>
+          </Col>
+        </Row>
+
+        <Form.Control
+          type="text"
+          placeholder={`Buscar ${tipo === 'producto' ? 'producto' : 'roll'}...`}
+          className="mb-3 bg-transparent text-white border-light"
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+        />
+
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          {itemsFiltrados.map(item => (
+            <Col key={item.id}>
+              <div className="card p-3 mb-3 d-flex flex-column">
+                <img 
+                  src={item.imagen || (tipo === 'producto' ? imgTabla : imgRoll)} 
+                  alt={item.titulo} 
+                  className="card-img-top" 
+                  style={{ objectFit: 'cover', height: '200px' }} // Controlamos la altura y el ajuste de las imágenes
+                />
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title">{item.titulo}</h5>
+                  <p className="card-text">{item.descripcion}</p>
+                  <p className="card-text fw-bold">${item.precio}</p>
+                  <div className="d-flex gap-2 mt-auto">
+                    <Button 
+                      size="sm" 
+                      className="btn-editar" 
+                      onClick={() => handleShowEditar(tipo, item)}
+                    >
+                      Editar
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      className="btn-eliminar" 
+                      onClick={() => handleEliminar(tipo, item.id)}
+                    >
+                      Eliminar
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Col>
           ))}
-        </tbody>
-      </Table>
-    </>
-  );
+        </Row>
+      </div>
+    );
+  };
 
   return (
     <Container className="mt-4">
-      {renderTabla(productos, 'producto')}
-      {renderTabla(rolls, 'roll')}
+      {renderCards(productos, 'producto')}
+      {renderCards(rolls, 'roll')}
 
       <Modal show={showModal} onHide={() => setShowModal(false)} className="modal-con-footer">
         <Modal.Header closeButton>
@@ -145,9 +186,7 @@ const AdminProductos = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            Cancelar
-          </Button>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>Cancelar</Button>
           <Button variant="primary" onClick={handleGuardar}>
             {modoEdicion ? 'Guardar Cambios' : 'Agregar'}
           </Button>

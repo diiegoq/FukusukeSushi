@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 
 import './HomePage.css';
 import Imagen from '../components/ImagenComponent'
-import imgTabla from '../assets/tablas.jpg'
+import imgVentas from '../assets/ventas.png'
 import imgCocktail from '../assets/cocktail.jpg'
 
 const HomeAdmin = () => {
   return (
     <div className="home-container">
 
-      <Link to="/tablas" style={{ textDecoration: 'none' }}>
+      <Link to="/productos-admin" style={{ textDecoration: 'none' }}>
         <Imagen class="producto"
-          backgroundImage={imgTabla}
+          backgroundImage={imgCocktail}
           title="PRODUCTOS" 
           description=""
           alignItems="flex-end"  
@@ -21,7 +21,7 @@ const HomeAdmin = () => {
     
       <Link to="/ventas" style={{ textDecoration: 'none' }}>
             <Imagen className="producto"
-            backgroundImage={imgCocktail}
+            backgroundImage={imgVentas}
             title="VENTAS" 
             description=""
             alignItems="flex-end"  
