@@ -1,0 +1,33 @@
+.btn-details {
+    background-color: #C31C1C;
+    color: white;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .btn-details:hover {
+    background-color: red;
+  }
+  
+  .btn-map {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .btn-map:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn-finish {
+    margin-top: 5%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .btn-finish:hover {
+    background-color: #218838;
+  }
+  

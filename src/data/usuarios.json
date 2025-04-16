@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "nombre": "Carla Muñoz",
+      "correo": "carla.munoz@gmail.com",
+      "direccion": "Av. Providencia 1234, Santiago",
+      "cantidad_compras": 15,
+      "puntos": 320,
+      "tipo": "Cliente",
+      "estado": "activo",
+      "fecha_registro": "2023-11-12T10:15:00"
+    },
+    {
+      "id": 2,
+      "nombre": "Jorge Pérez",
+      "correo": "jorge.perez@hotmail.com",
+      "direccion": "Calle San Diego 456, Santiago",
+      "cantidad_compras": 8,
+      "puntos": 120,
+      "tipo": "Cliente",
+      "estado": "activo",
+      "fecha_registro": "2023-06-04T14:00:00"
+    },
+    {
+      "id": 3,
+      "nombre": "Ana Fuentes",
+      "correo": "ana.fuentes@empresa.cl",
+      "direccion": "Av. Vicuña Mackenna 7890, Ñuñoa",
+      "cantidad_compras": 25,
+      "puntos": 640,
+      "tipo": "Cliente",
+      "estado": "activo",
+      "fecha_registro": "2022-08-21T09:30:00"
+    },
+    {
+      "id": 4,
+      "nombre": "Tomás Reyes",
+      "correo": "tomas.reyes@sushiadmin.cl",
+      "direccion": "Av. Apoquindo 2220, Las Condes",
+      "cantidad_compras": 5,
+      "puntos": 60,
+      "tipo": "Empleado",
+      "estado": "activo",
+      "fecha_registro": "2024-01-15T08:00:00"
+    },
+    {
+      "id": 5,
+      "nombre": "Lucía Herrera",
+      "correo": "lucia.herrera@admin.cl",
+      "direccion": "Calle Carmen 303, Santiago Centro",
+      "cantidad_compras": 0,
+      "puntos": 0,
+      "tipo": "Admin",
+      "estado": "activo",
+      "fecha_registro": "2021-04-10T17:45:00"
+    }
+  ]
+  

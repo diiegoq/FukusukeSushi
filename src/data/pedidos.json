@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "nombre_cliente": "Gabriel Boric",
+      "direccion_entrega": "Palacio la Moneda, Santiago, Chile",
+      "estado": "activo",
+      "fecha_pedido": "2025-04-10T08:30:00",
+      "tipo_pago": "Tarjeta de Crédito"
+    },
+    {
+      "id": 2,
+      "nombre_cliente": "Ana Gómez",
+      "direccion_entrega": "Calle Alameda 4567, Santiago, Chile",
+      "estado": "activo",
+      "fecha_pedido": "2025-04-11T10:00:00",
+      "tipo_pago": "Efectivo"
+    },
+    {
+      "id": 3,
+      "nombre_cliente": "Carlos Ramírez",
+      "direccion_entrega": "Calle Nueva York 789, Santiago, Chile",
+      "estado": "inactivo",
+      "fecha_pedido": "2025-04-09T15:20:00",
+      "tipo_pago": "Tarjeta de Débito"
+    },
+    {
+      "id": 4,
+      "nombre_cliente": "Luisa Fernández",
+      "direccion_entrega": "Avenida Vicuña Mackenna 2345, Santiago, Chile",
+      "estado": "activo",
+      "fecha_pedido": "2025-04-12T14:45:00",
+      "tipo_pago": "Tarjeta de Crédito"
+    },
+    {
+      "id": 5,
+      "nombre_cliente": "Martín Rodríguez",
+      "direccion_entrega": "Calle Pajaritos 5678, Santiago, Chile",
+      "estado": "inactivo",
+      "fecha_pedido": "2025-04-13T09:00:00",
+      "tipo_pago": "PayPal"
+    }
+  ]
+  

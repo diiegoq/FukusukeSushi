@@ -30,7 +30,7 @@ const HomeAdmin = () => {
             />
         </Link>
 
-        <Link to="/cocteleria" style={{ textDecoration: 'none' }}>
+        <Link to="/usuarios" style={{ textDecoration: 'none' }}>
             <Imagen className="producto"
             backgroundImage={imgUsuarios}
             title="USUARIOS" 

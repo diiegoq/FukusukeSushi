@@ -17,6 +17,8 @@ import Cocteleria from "./pages/CocktailsPage";
 import HomeAdmin from "./pages/HomeAdminPage";
 import Ventas from "./pages/VentasPage";
 import ProductosAdmin from "./pages/AdminProductsPage";
+import Usuarios from "./pages/UsersPage";
+import Despacho from './pages/DesapchoPage';
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
           <Route path="registrarse" element={<Registrarse />} />
           <Route path="home-admin" element={<HomeAdmin />} />
           <Route path="ventas" element={<Ventas />} />
+          <Route path="usuarios" element={<Usuarios />} />
+          <Route path="despacho" element={<Despacho />} />
           <Route path="productos-admin" element={<ProductosAdmin />} />
           <Route path="*" element={<NoPage />} />
         </Route>
