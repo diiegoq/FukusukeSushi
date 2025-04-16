@@ -44,7 +44,7 @@ const HomeAdmin = () => {
         <Link to="/despacho" style={{ textDecoration: 'none' }}>
         <Imagen class="producto"
           backgroundImage={imgDespacho}
-          title="PRODUCTOS" 
+          title="DESPACHO" 
           description=""
           alignItems="flex-end"  
           margin="20px 20px 20px 20px"
