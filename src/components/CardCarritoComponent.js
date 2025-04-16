@@ -18,7 +18,7 @@ const CardComponent = ({ imagen, titulo, precio, cantidad, aumentar, disminuir, 
   return (
     <div className="card-shop-item mb-3 position-relative">
       <button
-        className="position-absolute top-0 end-0 btn btn-link text-danger fs-5"
+        className="position-absolute top-0 end-0 btn btn-link text-danger fs-6"
         onClick={handleShow}
       >
         <TiDeleteOutline />
